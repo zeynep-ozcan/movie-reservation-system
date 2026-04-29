@@ -47,11 +47,23 @@ Ad=yeniAd;
 }
 public void TurGuncelle(string yeniTur)
     {
-        if (string.IsNullOrWhiteSpace)
+        if (string.IsNullOrWhiteSpace(yeniTur))
+        {
+            throw new ArgumetException("Yeni film türü boş olamaz");
 
-
+        }
+        Tur=yeniTur;
 
     }
+public void SureGuncelle(int yeniSure)
+    {
+        if (yeniSure <= 0)
+        {
+            throw new ArgumentException("Yeni süre 0'dan büyük olmalıdır.");
 
+        }
+        Sure =yeniSure;
+        
+    }
 
 }
