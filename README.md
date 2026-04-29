@@ -1,2 +1,2 @@
-# movie-resevation-system
-Sinema rezervasyon sistemi
+# movie-reservation-system
+movie reservation system
